@@ -49,11 +49,46 @@ nav li a{
 
 /* Aqui comienza el cuerpo  */
 main{
-  background-color: #1b1d21;
-  color: white;
+  /* background-color: #1b1d21;
+  color: white; */
+}
+
+/* Portada section */
+
+.Portada{
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 
-.portada img{
 
+.Portada img{
+  border-radius: 15px;
+  width: 800px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.title_box{
+  background-color: #1b1d21;
+  width: 500px;
+  height: 120px;
+  padding: 20px;
+  position: relative;
+  margin-right: -150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1{
+  color: white;
+}
+
+.title_box p{
+  color: gray;
+  font-size: 20px;
+  margin-top: 0;
 }
