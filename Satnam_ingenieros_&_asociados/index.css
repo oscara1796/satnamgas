@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header{
+  background-color: white;
+  width: 100%;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img{
+  width: 75px;
+
+}
+
+
+nav{
+  padding: 10px;
+  display: inherit;
+  align-items: center;
+
+}
+
+nav ul{
+  display: inherit;
+  align-items: : center;
+}
+
+nav li{
+  display: inline-block;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left:10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+nav li a{
+  text-decoration: none;
+}
+
+/* Aqui comienza el cuerpo  */
+main{
+  background-color: #1b1d21;
+  color: white;
+}
+
+
+.portada img{
+
+}
