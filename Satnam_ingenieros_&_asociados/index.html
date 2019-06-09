@@ -17,9 +17,9 @@
       </figure>
       <nav>
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Servicios</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#conocenos">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
           <li><a href="">Contacto</a></li>
         </ul>
       </nav>
@@ -31,7 +31,7 @@
       <section class="Portada">
         <div class="title_box">
           <h1>SATNAM INGENIEROS &amp; ASOCIADOS S.C.</h1>
-          <p>Unidad verificadora de Gas L.P</p>
+          <p id="conocenos">Unidad verificadora de Gas L.P y Gas Natural</p>
         </div>
         <!-- background -->
         <!-- <img width="700px" src="portada-image.jpg" alt="imagen de portada"> -->
@@ -44,78 +44,185 @@
     <section class="conocenos">
         <div class="menu">
           <ul id="buttons-list">
-            <li><button class="button-conocenos"  type="button" name="button" onclick="display_show_menu_button1()">Conocenos</button></li>
-            <li><button class="button-conocenos" type="button" name="button" onclick="display_show_menu_button2()">Mision y vision</button></li>
+            <li><button class="button-conocenos"  type="button" name="button" onclick="display_show_menu_button1()">Conócenos</button></li>
+            <li><button class="button-conocenos" type="button" name="button" onclick="display_show_menu_button2()">Misión y visión</button></li>
             <li><button class="button-conocenos" type="button" name="button" onclick="display_show_menu_button3()">Beneficios</button></li>
           </ul>
         </div>
         <!-- inf del botton conocenos  -->
         <div id="conocenos-firts-button">
-          <figure>
-            <img src="" alt="">
-          </figure>
-          <p>Somos una empresa mexicana dedicada y especializada en la elaboración y
-              formulación de dictámenes técnicos de verificación, inspección y evaluación de la
-              conformidad acorde con las Normas Oficiales Mexicanas aplicables a tanques e
-              instalaciones de Gas Natural, Gas L.P. y Recipientes Sujetos a Presión con más
-              de 8 años de experiencia en el sector.
-              Además brindamos servicios profesionales de asesoramiento, evaluación,
-              capacitación y consultoría técnica-especializada de proyectos en materia del
-              correcto y seguro manejo, mantenimiento, modificación e instalación de
-              recipientes y/o instalaciones de uso y aprovechamiento de Gas Natural y Gas L.P.
-            </p>
+          <!-- articulo de conocenos  -->
+          <article class="conocenos-quienes-somos">
+            <figure id="quienes-somos-imagen">
+              <img src="imagenes/profesional.jpg" alt="">
+            </figure>
+            <p>Somos una empresa mexicana dedicada y especializada en la elaboración y
+                formulación de dictámenes técnicos de verificación, inspección y evaluación de la
+                conformidad acorde con <span class="resaltar">las Normas Oficiales Mexicanas</span> aplicables a tanques e
+                instalaciones de <span class="resaltar">Gas Natural, Gas L.P.</span> y Recipientes Sujetos a Presión con más
+                de 8 años de experiencia en el sector.
+                Además brindamos servicios profesionales de asesoramiento, evaluación,
+                capacitación y consultoría técnica-especializada de proyectos en materia del
+                correcto y seguro manejo, mantenimiento, modificación e instalación de
+                recipientes y/o instalaciones de uso y aprovechamiento de <span class="resaltar">Gas Natural y Gas L.P</span>.
+              </p>
+          </article>
+          <!-- acaba articulo de quienes somos  -->
         </div>
         <div id="conocenos-second-button-mision">
-          <div class="mision-vision">
-            <h3>Mision</h3>
-            <p>Brindar a nuestros clientes una amplia gama de servicios ingenieriles altamente
-                profesionales de asesoría, consultoría y dictaminación técnica y pericial de la más
-                alta calidad, poniendo a disposición de todos ellos información confiable y certera
-                al respecto del estado de sus instalaciones, tanques y/o vehículos de uso y
-                aprovechamiento de Gas Natural y Gas L.P., contribuyendo de este modo a la
-                mejora continua de sus empresas y organizaciones, garantizándoles un uso y
-                manejo adecuado, seguro, óptimo y eficiente de las energías petrolíferas por
-                medio de la aplicación y cumplimiento de las Normas Oficiales Mexicanas.</p>
-          </div>
+          <section id="hijo-conocenos-padre-de-mision-y-vision">
             <div class="mision-vision">
-              <h3>Vision</h3>
-              <p>Posicionarnos como la empresa líder en la región proveedora de servicios de
-                  asesoría, consultoría y dictaminación técnica y pericial de la más alta calidad en
-                  materia de Gas Natural y Gas L.P. a través de la mejora continua, siendo la mejor
-                  opción para nuestros clientes, proveedores, personal y accionistas, contribuyendo
-                  de ese modo al desarrollo económico y social de nuestra región anteponiendo
-                  siempre en nuestro actuar los valores de la Honestidad, Excelencia, Calidad,
-                  Trabajo Duro y Compromiso Social con un estricto apego a la ética profesional e
-                  imparcialidad</p>
+              <figure>
+                <img class="imagen-articles" src="imagenes/gas-tube.jpg" alt="">
+              </figure>
+              <article class="Mision-y-vision">
+                <h3>Misión</h3>
+                <p>Brindar a nuestros clientes una amplia gama de servicios ingenieriles altamente
+                    profesionales de asesoría, consultoría y dictaminación técnica y pericial de la más
+                    alta calidad, poniendo a disposición de todos ellos información confiable y certera
+                    al respecto del estado de sus instalaciones, tanques y/o vehículos de uso y
+                    aprovechamiento de Gas Natural y Gas L.P., contribuyendo de este modo a la
+                    mejora continua de sus empresas y organizaciones, garantizándoles un uso y
+                    manejo adecuado, seguro, óptimo y eficiente de las energías petrolíferas por
+                    medio de la aplicación y cumplimiento de las Normas Oficiales Mexicanas.</p>
+              </article>
             </div>
+              <div class="mision-vision">
+                <article class="Mision-y-vision">
+                  <h3>Visión</h3>
+                  <p>Posicionarnos como la empresa líder en la región proveedora de servicios de
+                      asesoría, consultoría y dictaminación técnica y pericial de la más alta calidad en
+                      materia de Gas Natural y Gas L.P. a través de la mejora continua, siendo la mejor
+                      opción para nuestros clientes, proveedores, personal y accionistas, contribuyendo
+                      de ese modo al desarrollo económico y social de nuestra región anteponiendo
+                      siempre en nuestro actuar los valores de la Honestidad, Excelencia, Calidad,
+                      Trabajo Duro y Compromiso Social con un estricto apego a la ética profesional e
+                      imparcialidad</p>
+                </article>
+                <figure >
+                    <img class="imagen-articles" src="imagenes/gas-tank.jpg" alt="">
+                </figure>
+              </div>
+          </section>
         </div>
         <div id="conocenos-third-button-servicios">
-          <h3>Servicios</h3>
-          <p>Con socios acreditados como Unidad de Verificación y un equipo de peritos
-              acreditados ante diversos tribunales del orden federal, SATNAM INGENIEROS &amp;
-              ASOCIADOS S.C. ofrece una amplia gama de servicios profesionales de
-              ingeniería, dictaminación y verificación de recipientes, vehículos e instalaciones en
-              materia de Gas Natural, Gas L.P de acuerdo con lo establecido por las Normas
-              Oficiales Mexicanas., pruebas de ultrasonido, elaboración y formulación de
-              dictámenes periciales del ramo crininalístico y pruebas / ensayos no destructivos
-              en Recipientes Sujetos a Presión:</p>
+          <!-- Aqui empieza beneficios -->
+          <div class="beneficios_section">
+            <article class="beneficios-articles">
+              <h3>Seguridad</h3>
+              <p>Al realizar un monitoreo y evaluación preventiva periódica de su instalación de gas, se reducen los
+                porcentajes de riesgos y desperfectos en la misma.</p>
+                <img src="imagenes/blue helmet.png" alt="">
+            </article>
+            <article class="beneficios-articles">
+              <h3>Eficiencia</h3>
+              <p>Al prevenir fallas, garantizará un aumento en la productividad que se verá directamente reflejada
+                en los resultados operativos y financieros de la compañía.</p>
+                <img src="imagenes/engrane.png" alt="">
+            </article>
+            <article class="beneficios-articles">
+              <h3>Ahorro</h3>
+              <ul>
+                <li>Se minimizan los costos directos e indirectos por mantenimientos correctivos en situaciones urgentes.</li>
+                <li>Se reducen los costos de las primas de seguro al bajar los índices de siniestros en las mismas.</li>
+                <li>Se obtienen reducciones en los montos de las facturas de gas en los casos donde se detectan usos ineficientes, fugas o calibraciones incorrectas en los equipos que lo utilizan.</li>
+              </ul>
+              <img src="imagenes/cash.png" alt="">
+            </article>
+          </div>
+          <!-- Aqui acaba la sección de beneficios  -->
         </div>
         <!-- Aqui termina la seccion de conocenos  -->
     </section>
 
         <!-- Servicios -->
-        <section class="servicios">
-          <figure>
-            <img src="" alt="">
-          </figure>
-          <div class="texto_servicios">
-              <h3>Nuestros Servicios</h3>
-              <p></p>
-          </div>
+        <section id="servicios">
+          <article class="servicios-presentación">
+            <figure>
+              <img src="imagenes/services.jpg" alt="">
+            </figure>
+            <div class="texto_servicios">
+                <h3>Nuestros Servicios</h3>
+                <p>Con socios acreditados como Unidad de Verificación y un equipo de peritos
+                  acreditados ante diversos tribunales del orden federal, <span class="resaltar">SATNAM INGENIEROS &amp;
+                  ASOCIADOS S.C.</span> ofrece una amplia gama de servicios profesionales de
+                  ingeniería, dictaminación y verificación de recipientes, vehículos e instalaciones en
+                  materia de Gas Natural, Gas L.P de acuerdo con lo establecido por las Normas
+                  Oficiales Mexicanas., pruebas de ultrasonido, elaboración y formulación de
+                  dictámenes periciales del ramo crininalístico y pruebas / ensayos no destructivos
+                  en Recipientes Sujetos a Presión. <span class="resaltar">Los servicios con los que contamos son:</span></p>
+            </div>
+          </article>
 
+          <!-- Aqui empiezan las opciones de servicios  -->
+          <article class="servicios-opciones">
+            <div class="caja-servicios-opciones" id="dictaminación-tecnica" >
+              <figure class="img-servicios-opciones">
+                <img  src="imagenes/dictaminación-tecnica.jpg" alt="">
+              </figure>
+              <div class="texto-servicios-opciones">
+                <h3 class="titulos-servicios">Dictaminación Técnica</h3>
+                <p>Elaboración y Formulación de Dictámenes Técnicos de Evaluación de la
+                  Conformidad sujetos a una previa y minuciosa evaluación, verificación e
+                  inspección física y presencial de los tanques, vehículos y/o instalaciones de
+                  carburación, uso y/o aprovechamiento de Gas Natural y Gas L.P. así como de
+                  recipientes sujetos a presión, esto con el objetivo de acreditar que cumplan con las
+                  condiciones de seguridad necesarias dispuestas por las Normas Oficiales
+                  Mexicanas aplicables según sea el caso.</p>
+                <button class="button-servicios-opciones" type="button" name="button">Más info</button>
+              </div>
+              <div class="dictaminacion-tecnica-hide">
 
+              </div>
+            </div>
+            <!-- Aqui acaba dictaminación-tecnica -->
+            <div class="caja-servicios-opciones" id="dictaminación-pericial" >
+              <figure class="img-servicios-opciones">
+                <img  src="imagenes/dictaminación-pericial.jpg" alt="">
+              </figure>
+              <div class="texto-servicios-opciones">
+                <h3 class="titulos-servicios">Dictaminación Pericial</h3>
+                <p>Elaboración y Formulación de Dictámenes Periciales del ramo criminalístico en
+                  materia de Incendios y Explosiones y Hechos de Tránsito. En SATNAM
+                  INGENIEROS &amp; ASOCIADOS S.C. contamos con personal altamente
+                  especializado que posee acreditación certificada de sus habilidades y
+                  conocimientos ante diversos tribunales del orden federal, con el objetivo de que
+                  puedan fungir como peritos acreditados en las áreas mencionadas etc..</p>
+                <button class="button-servicios-opciones" type="button" name="button">Más info</button>
+              </div>
+              <div class="dictaminacion-pericial-hide">
+
+              </div>
+            </div>
+            <!-- aqui acaba dictaminación-pericial -->
+            <div class="caja-servicios-opciones"id="verificación-tecnica" >
+                <figure class="img-servicios-opciones">
+                  <img  src="imagenes/verificación-tecnica.jpg" alt="">
+                </figure>
+              <div class="texto-servicios-opciones">
+                <h3 class="titulos-servicios">Verificiación Técnica</h3>
+                <p>Dentro del catálogo de servicios de Verificación Técnica, SATNAM INGENIEROS
+                        &amp; ASOCIADOS S.C. pone a disposición de sus clientes los siguientes servicios en
+                        materia de Verificación:
+                        <ul>
+                          <li>Pruebas / Ensayos NO Destructivos:</li>
+                            <ul class="sub-elements">
+                              <li>Cálculo de Espesores</li>
+                              <li>Partículas Magnéticas</li>
+                              <li>Partículas Magnéticas</li>
+                              <li>Partículas Magnéticas</li>
+                            </ul>
+                        </ul>
+                        </p>
+                <button class="button-servicios-opciones" type="button" name="button">Más info</button>
+              </div>
+              <div class="verificacion-tecnica-hide">
+
+              </div>
+            </div>
+            <!-- aqui acaba Verificación-tecnica -->
+          </article>
         </section>
-
 
 
     </main>

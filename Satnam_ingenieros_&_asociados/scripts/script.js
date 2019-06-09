@@ -28,3 +28,9 @@ function display_show_menu_button3(){
 }
 
 // Se caba las funciones de conocenos
+
+function display_hiden_info(){
+ var x = document.getElementsByClassName('className');
+}
+
+// Aqui comienzan las funciones de servicios

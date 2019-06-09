@@ -42,10 +42,16 @@ nav li{
   padding-right: 10px;
   font-weight: bold;
   font-family: sans-serif;
+  padding-right: 20px;
 }
 
 nav li a{
   text-decoration: none;
+  color: #5B5B5B;
+}
+
+nav li a:hover{
+  color: #047AFF;
 }
 
 /* Aqui comienza el cuerpo  */
@@ -105,6 +111,11 @@ h1{
   font-family: sans-serif;
 }
 
+/* Para resaltar texto */
+
+.resaltar{
+  font-weight: bold;
+}
 
 /* Conocenos */
 
@@ -145,10 +156,235 @@ h1{
   color: #173275;
 }
 
+
+.conocenos-quienes-somos{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.conocenos-quienes-somos p{
+  align-self: center;
+}
+
+#quienes-somos-imagen img{
+  width: 270px;
+  border-radius: 5px;
+}
+/* Aqui empieza la sección de misión  */
 #conocenos-second-button-mision{
   display: none;
 }
 
+.imagen-articles{
+  width: 240px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mision-vision{
+  display: flex;
+  width: 50%;
+  font-size: 15px;
+  padding: 0px  10px;
+}
+
+.mision-vision p{
+  align-self:center;
+
+}
+
+/* Para todos los h3 */
+h3{ font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#hijo-conocenos-padre-de-mision-y-vision{
+  display: flex;
+}
+/* Aqui se acaba misión y vision */
+
+
+/* Aqui empieza la sección de beneficios */
 #conocenos-third-button-servicios{
   display: none;
+}
+
+.beneficios_section{
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.beneficios-articles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 15px black;
+}
+
+.beneficios-articles img{
+  width: 100px;
+  margin-bottom: 10px;
+
+}
+
+/* Animacion cuando se pone el cursor */
+.beneficios-articles img:hover{
+  animation-name: spin;
+  animation-duration: 2s;
+}
+
+
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.beneficios-articles h3{
+  text-align: center;
+  color: #173275;
+}
+
+.beneficios-articles ul li{
+  margin: 5px 0px;
+}
+
+/* ______________________Aqui acaba la seccion de Conocenós */
+/* Aqui empiezan los servicios */
+
+
+#servicios{
+  align-self: flex-start;
+  display: flex;
+
+  margin-top: 50px;
+  background-color: #173275;
+  width: 100%;
+  flex-direction: column;
+}
+
+.servicios-presentación{
+  display: flex;
+  font-size: 25px;
+}
+
+.servicios-presentación img{
+  width: 500px;
+  border-radius: 10px;
+}
+
+.texto_servicios{
+  color: white;
+  padding: 0px 10px;
+}
+
+.texto_servicios h3{
+  font-size: 50px;
+  margin: 5px 0px;;
+  color: white;
+  font-weight: bolder;
+}
+
+
+/* estilos de servicios opciones  */
+
+.servicios-opciones{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.caja-servicios-opciones{
+  width: 300px;
+  height: 370px;
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  transition: width 2s,height 2s;
+}
+
+.caja-servicios-opciones:hover{
+  width: 320px;
+  height: 390px;
+}
+
+
+.caja-servicios-opciones figure img{
+  width: inherit;
+  border-radius: 10px;
+}
+
+.img-servicios-opciones{
+  width: inherit;
+}
+
+
+
+
+.texto-servicios-opciones{
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #173275;
+  margin-top: -30px;
+  position: relative;
+  width: inherit;
+  box-sizing: border-box;
+  height: inherit;
+}
+
+.texto-servicios-opciones h3{
+  margin: 10px 5px;
+}
+
+.texto-servicios-opciones p{
+  font-size: 15px;
+  margin-bottom:0px;
+}
+
+.texto-servicios-opciones  ul li{
+  font-size: 15px;
+}
+.texto-servicios-opciones ul{
+  margin: 5px 0px;
+}
+
+.sub-elements{
+  list-style-type: circle;
+}
+
+
+
+.button-servicios-opciones{
+  width: 100px;
+  background-color: white;
+  border: none;
+  color: #173275;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+}
+
+.button-servicios-opciones:hover{
+  background-color: #173275;
+  color: white;
 }
