@@ -305,6 +305,7 @@ h3{ font-size: 20px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  height: 370px;
 }
 
 .caja-servicios-opciones{
@@ -354,6 +355,8 @@ h3{ font-size: 20px;
   margin: 10px 5px;
 }
 
+
+
 .texto-servicios-opciones p{
   font-size: 15px;
   margin-bottom:0px;
@@ -387,4 +390,55 @@ h3{ font-size: 20px;
 .button-servicios-opciones:hover{
   background-color: #173275;
   color: white;
+}
+
+/* Aquicomienza la info escondida */
+
+.hiden-info-opciones{
+  margin-top: 10px;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0;
+  width: 100%;
+}
+
+.info-hide-servicios h3{
+      margin: 0;
+      border: none;
+}
+
+.info-hide-servicios{
+  background-color: #173275;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+  border: 1px solid white;
+  margin: 0;
+}
+
+.texto-hidden-info{
+  font-size: 15px;
+  border: none;
+}
+
+#dictaminacion-tecnica-hide{
+    display: none;
+    width: 90%;
+    position: fixed;
+    margin: 0;
+}
+
+#dictaminacion-pericial-hide{
+    display: none;
+}
+
+#verificacion-tecnica-hide{
+    display: none;
 }

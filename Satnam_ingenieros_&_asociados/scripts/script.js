@@ -29,8 +29,31 @@ function display_show_menu_button3(){
 
 // Se caba las funciones de conocenos
 
-function display_hiden_info(){
- var x = document.getElementsByClassName('className');
+function display_hiden_info_dic_tecnica(){
+ var a = document.getElementById("dictaminacion-tecnica-hide");
+ var b = document.getElementById("dictaminacion-pericial-hide");
+ var c = document.getElementById("verificacion-tecnica-hide");
+ a.style.display = "block";
+ b.style.display = "none";
+ c.style.display = "none";
+}
+
+function display_hiden_info_dic_pericial(){
+ var x = document.getElementById("dictaminacion-tecnica-hide");
+ var y = document.getElementById("dictaminacion-pericial-hide");
+ var z = document.getElementById("verificacion-tecnica-hide");
+ x.style.display = "none";
+ y.style.display = "block";
+ z.style.display = "none";
+}
+
+function display_hiden_info_verificacion(){
+ var x = document.getElementById("dictaminacion-tecnica-hide");
+ var y = document.getElementById("dictaminacion-pericial-hide");
+ var z = document.getElementById("verificacion-tecnica-hide");
+ x.style.display = "none";
+ y.style.display = "none";
+ z.style.display = "block";
 }
 
 // Aqui comienzan las funciones de servicios
