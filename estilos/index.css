@@ -639,3 +639,21 @@ h3{ font-size: 20px;
   border-radius: 5px;
 
 }
+
+@media only screen and (max-width: 700px){
+  .contact_section{
+    height: 80vh;
+
+    /* grid-gap: 30px; */
+    grid-template-areas: "title title"
+                          "contact  contact"
+                          "google_map  google_map"
+
+  }
+  .contact_google_map iframe{
+    height: 200px;
+    width: 70vw;
+    border-radius: 5px;
+
+  }
+}
