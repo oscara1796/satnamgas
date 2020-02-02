@@ -54,6 +54,16 @@ function display_hiden_info_verificacion(){
  x.style.display = "none";
  y.style.display = "none";
  z.style.display = "block";
+ 
+}
+
+function disabled_display_hidden_info(){
+  var x = document.getElementById("dictaminacion-tecnica-hide");
+  var y = document.getElementById("dictaminacion-pericial-hide");
+  var z = document.getElementById("verificacion-tecnica-hide");
+  x.style.display = "none";
+  y.style.display = "none";
+  z.style.display = "none";
 }
 
 // Aqui comienzan las funciones de servicios

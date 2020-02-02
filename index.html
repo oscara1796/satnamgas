@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Satnam Ingenieros & Asociados</title>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/index.css" >
     <meta name="viewport" content="width">
   </head>
@@ -12,17 +13,34 @@
 <!-- Encabezado -->
     <header>
       <!-- logotipo -->
-      <figure class="logo">
-          <img src="imagenes/logo.jpg" alt="">
-      </figure>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#conocenos">Nosotros</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="">Contacto</a></li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg navbar-light  container-fluid">
+        <figure class="logo">
+            <img src="imagenes/logo.jpg" alt="">
+        </figure>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conocenos">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+
+        </div>
       </nav>
+
     </header>
 
 
@@ -72,11 +90,11 @@
         <div id="conocenos-second-button-mision">
           <section id="hijo-conocenos-padre-de-mision-y-vision">
             <div class="mision-vision">
-              <figure>
+              <figure  class="vision_image_container">
                 <img class="imagen-articles" src="imagenes/gas-tube.jpg" alt="">
               </figure>
               <article class="Mision-y-vision">
-                <h3>Misión</h3>
+                <h3 class="mision-vision-title">Misión</h3>
                 <p>Brindar a nuestros clientes una amplia gama de servicios ingenieriles altamente
                     profesionales de asesoría, consultoría y dictaminación técnica y pericial de la más
                     alta calidad, poniendo a disposición de todos ellos información confiable y certera
@@ -89,7 +107,7 @@
             </div>
               <div class="mision-vision">
                 <article class="Mision-y-vision">
-                  <h3>Visión</h3>
+                  <h3 class="mision-vision-title">Visión</h3>
                   <p>Posicionarnos como la empresa líder en la región proveedora de servicios de
                       asesoría, consultoría y dictaminación técnica y pericial de la más alta calidad en
                       materia de Gas Natural y Gas L.P. a través de la mejora continua, siendo la mejor
@@ -99,8 +117,8 @@
                       Trabajo Duro y Compromiso Social con un estricto apego a la ética profesional e
                       imparcialidad</p>
                 </article>
-                <figure >
-                    <img class="imagen-articles" src="imagenes/gas-tank.jpg" alt="">
+                <figure  class="vision_image_container">
+                    <img  id="vision_gas_image" class="imagen-articles" src="imagenes/estufa.jpeg" alt="">
                 </figure>
               </div>
           </section>
@@ -138,7 +156,7 @@
         <!-- Servicios -->
         <section id="servicios">
           <article class="servicios-presentación">
-            <figure>
+            <figure class="servicios-presentación-container-img">
               <img src="imagenes/services.jpg" alt="">
             </figure>
             <div class="texto_servicios">
@@ -217,18 +235,90 @@
           </article>
         </section>
         <article class="hiden-info-opciones">
-          <!-- <div class="info-hide-servicios" id="verificacion-tecnica-hide">
-              <h3 class="titulos-servicios">Dictaminación Técnica</h3>
-              <div class="texto-hidden-info">
-                  <p></p>
+          <!-- Aqui empieza Verificacion tecnica info hide  -->
+          <div  id="verificacion-tecnica-hide">
+              <div class="info-hide-servicios">
+                <div class="titulos-hide-info">
+
+                  <h3>Verificación Técnica</h3>
+                  <button class="button-hide-info" onclick="disabled_display_hidden_info()" type="button" name="button">&#8592;</button>
+                </div>
+                <div class="texto-hidden-info">
+                    <p>Dentro del catálogo de servicios de Verificación Técnica, SATNAM INGENIEROS
+                          &amp; ASOCIADOS S.C. pone a disposición de sus clientes los siguientes servicios en
+                            materia de Verificación:</p>
+                </div>
+              </div>
           </div>
-          <div class="info-hide-servicios" id="dictaminacion-pericial-hide">
-
-
-          </div> -->
+            <!-- Aqui acaba Verificacion tecnica info hide  -->
+            <!-- Aqui empieza dictaminación pericial  -->
+          <div  id="dictaminacion-pericial-hide">
+            <div class="info-hide-servicios">
+                <div class="titulos-hide-info">
+                  <button class="button-hide-info" onclick="disabled_display_hidden_info()" type="button" name="button">&#8592;</button>
+                  <h3>Dictaminación Pericial</h3>
+                </div>
+                <div class="texto-hidden-info">
+                  <p>Elaboración y Formulación de Dictámenes Periciales del ramo criminalístico en
+                      materia de Incendios y Explosiones y Hechos de Tránsito. En SATNAM
+                      INGENIEROS &amp; ASOCIADOS S.C. contamos con personal altamente
+                      especializado que posee acreditación certificada de sus habilidades y
+                      conocimientos ante diversos tribunales del orden federal, con el objetivo de que
+                      puedan fungir como peritos acreditados en las áreas mencionadas, capaces de
+                      formular y emitir un dictamen pericial encaminado a obtener conclusiones y
+                      criterios certeros, objetivos y exactos, útiles para los fines de la actividad procesal.
+                      El dictamen pericial puede ser solicitado por el juez o por los abogados de las
+                      partes involucradas en un litigio civil, mercantil, familiar o penal, a fin de esclarecer
+                      hechos confusos o dudosos en relación al tema u objeto para el cual se solicita el
+                      peritaje.
+                      <br>
+                      <br>
+                      Es por medio de la aplicación de métodos y conocimientos técnico-científicos que
+                      en una primera instancia se inicia un exhaustivo y minucioso proceso de
+                      investigación durante el cual se buscan y recaban pruebas, posteriormente se
+                      estudia y analiza la evidencia encontrada con el objetivo de esclarecer la verdad
+                      de los hechos y, finalmente el perito emite el informe o dictamen pericial con sus
+                      conclusiones fundadas y sustentadas, dando su opinión técnica y experticia sobre
+                      la materia o el suceso que forma parte del juicio.
+                        <br>
+                        <br>
+                      El peritaje, así como el peso de las pruebas periciales que se aporten al juicio
+                      juegan un papel fundamental en el proceso penal y son determinantes en la
+                      resolución de numerosos litigios, ya que servirán de ayuda y fungirán como una
+                      herramienta útil que el juez podrá valorar y utilizar para tomar una decisión y emitir
+                      una sentencia al respecto.
+                      <br>
+                      <br>
+                      El peritaje en materia de Incendios y Explosiones consiste en la investigación y
+                      búsqueda de indicios sobre el origen del incendio o explosión, las causas y circunstancias
+                      que propiciaron a que se suscitara dicho siniestro, sus alcances destructivos, el área que
+                      fue afectada, determinación de si se dio o no el correcto y debido apego a la observancia
+                      de disposiciones, medidas, normas o regulaciones de seguridad preventivas antes de que
+                      se produjera el fuego o la explosión, determinación de responsabilidad civil, desarrollo de
+                      un modelo que indique el foco y trayectoria del incendio, así como la determinación de si
+                      se trató de un incendio o explosión circunstancial o provocado.
+                      El peritaje en materia de Hechos de Tránsito consiste en la investigación de la causa o el
+                      origen de los hechos o percances de tránsito terrestre, utilizando una metodología
+                      científica aplicada a los mismos, así como de leyes fundamentales de la física que le
+                      permitan elaborar al perito una reconstrucción del percance o hecho que se apegue a la
+                      verdad de lo acontecido. El dictamen pericial que se emita en esta materia respecto del
+                      suceso o percance contempla una revisión técnica de los vehículos involucrados (huellas
+                      de choque), que consiste en la determinación, ubicación y características de indicios
+                      criminalísticos que presenten los vehículos, entre otros: revisión de reparaciones
+                      recientes, detectar si presentan huellas de haber participado en algún atropello, intensidad
+                      de sus daños, así como la trayectoria de las huellas y vectores de deformación que
+                      presenten los vehículos.</p>
+                </div>
+            </div>
+          </div>
+          <!-- Aqui acaba dictaminación Pericial  -->
+          <!-- Aqui empieza dictaminacion Tecnica  -->
           <div id="dictaminacion-tecnica-hide">
               <div class="info-hide-servicios">
-                    <h3>Dictaminación Técnica</h3>
+                <div class="titulos-hide-info">
+                  <button class="button-hide-info" onclick="disabled_display_hidden_info()" type="button" name="button">&#8592; </button>
+                  <h3>Dictaminación  Técnica</h3>
+                </div>
                     <div class="texto-hidden-info">
                         <p>Elaboración y Formulación de Dictámenes Técnicos de Evaluación de la
                           Conformidad sujetos a una previa y minuciosa evaluación, verificación e
@@ -255,14 +345,43 @@
                     </div>
               </div>
           </div>
+          <!-- Aqui acaba dictaminación tecninca info hide  -->
         </article>
+
+
+        <section class="contact_section">
+          <h3 class="contact_title mr-auto ml-auto  mt-3">Contacto</h3>
+          <div class="contact_content justify-content-center">
+
+            <p>Telefono: 3310912510 / 3319911710
+              <br>
+              Email: cotizacionessatnam@gmail.com
+              <br>
+              Horario de atención:
+              <br>
+              Hora en Ciudad de México, CDMX (GMT-6)
+              <br>
+              Lunes a Viernes
+              <br>
+              9:00 am a 2:00 pm
+              <br>
+              4:00 pm a 6:00 pm
+              </p>
+          </div>
+          <div class="contact_google_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.7428082996826!2d-103.42136148559966!3d20.598558207702137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428acef01031ca5%3A0xe6323ac72cc373ea!2sCalle%20Bah%C3%ADa%20de%20Banderas%202506%2C%20Parques%20de%20Santa%20Mar%C3%ADa%2C%2045609%20San%20Pedro%20Tlaquepaque%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1580607627064!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </section>
 
 
     </main>
     <footer>
 
     </footer>
-    <script src="scripts/script.js">
+    <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     </script>
   </body>
