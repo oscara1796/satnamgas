@@ -80,7 +80,9 @@ main{
 
 @media only screen and (max-width:700px){
 
-
+ .Portada{
+   background-size: 650px 510px;
+ }
 
 }
 
@@ -380,7 +382,7 @@ h3{ font-size: 20px;
     font-size: 25px;
   }
   #imagen_pres_serv{
-    width: 70%;
+    width: 80%;
     margin-top: 15px;
 
   }
