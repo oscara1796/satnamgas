@@ -361,12 +361,16 @@ h3{ font-size: 20px;
 }
 
 .servicios-presentación-container-img{
+  display: flex;
   height: 100%;
   align-self: center;
+  justify-content: center;
 }
 
 .servicios-presentación-container-img img{
   margin-left: 10px;
+
+
 }
 
 @media only screen and (max-width:700px){
@@ -375,6 +379,12 @@ h3{ font-size: 20px;
     flex-direction: column;
     font-size: 25px;
   }
+  #imagen_pres_serv{
+    width: 70%;
+    margin-top: 15px;
+
+  }
+
 }
 
 .servicios-presentación img{
