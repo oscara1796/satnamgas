@@ -559,19 +559,19 @@ h3{ font-size: 20px;
 }
 
 .info-hide-servicios{
-  background-color: #1a80c4;
-  color: #1c1c1c;
+  background-color: #ffffff;
+  color: black;
   width: 100%;
   position: absolute;
   top: -100px;
-  height: 500px;
+  height: 85vh;
 	overflow-y: scroll;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 10px;
-  border: 3px solid white;
+  border: 3px solid gray;
   margin: 0;
 }
 
@@ -581,43 +581,59 @@ h3{ font-size: 20px;
 }
 
 .titulos-hide-info{
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
   text-align: center;
 }
 
+.title_hiden_info{
+  display: inline-block;
+
+}
+
 .button-hide-info{
-  display: inline;
-  float: left;
+  display: inline-block;
+  float: right;
   background-color: white;
   color:#047AFF;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bolder;
-  padding: 3px 10px;
+  padding: 10px 10px;
   border: none;
+
 }
 
 
 
+/* button info section  */
+
+.button_section_info{
+  margin: 0px 10px;
+}
+
+
+
+/* end of btton info sectio  */
+
 #dictaminacion-tecnica-hide{
     display: none;
-    width: 90%;
+    width: 95%;
     position: fixed;
-    margin: 0;
+    margin: 0px;
 }
 
 #dictaminacion-pericial-hide{
     display: none;
-    width: 90%;
+    width: 95%;
     position: fixed;
-    margin: 0;
+    margin: 0px;
 }
 
 #verificacion-tecnica-hide{
     display: none;
-    width: 90%;
+    width: 95%;
     position: fixed;
-    margin: 0;
+    margin: 0px;
 }
 
 
@@ -628,7 +644,7 @@ h3{ font-size: 20px;
 .contact_section{
   margin-top: 200px;
   width: 100%;
-  height: 300px;;
+  height: 370px;;
   background-color: #173275;
   display: grid;
   padding: 10px;
@@ -651,6 +667,11 @@ h3{ font-size: 20px;
   font-size: 18px;
 
 }
+
+.contact_inst{
+  font-size: 15px;
+  font-weight: bold;
+}
 .contact_google_map{
   grid-area: google_map;
   display: flex;
@@ -659,7 +680,7 @@ h3{ font-size: 20px;
 }
 
 .contact_google_map iframe{
-  height: 200px;
+  height: 270px;
   border-radius: 5px;
 
 }
